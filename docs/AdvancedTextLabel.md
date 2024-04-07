@@ -6,11 +6,17 @@ Extends **RichTextLabel**
 ## Table of Contents
 
 - [**Vars**](#vars)
+	- [**raku**](#raku)
 	- [**parser**](#parser)
 - [**Signals**](#signals)
 	- [**custom_link**](#custom_link)
 
 ## Vars
+
+### raku
+
+Rakugo singleton reference
+Used only if RDS addon is enabled
 
 ### parser
 

@@ -33,8 +33,6 @@ Generates LabelSettings set based on the given sizes
 It is used to generate headers initial settings.
 Must be run at start of parsing
 Needed for plugins with other addons to work
-Must be run at end of parsing
-Needed for plugins with other addons to work
 Returns given ExtendedBBCode parsed into BBCode
 
 ### parse_headers
@@ -50,5 +48,6 @@ Parse [space=x], that it add space in text in size of x
 ### add_header
  - header_size: int
  -  text: String
+ -  add_new_line:=false
 
 Returns given text with added BBCode for header with given size (1-4) to it

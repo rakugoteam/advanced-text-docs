@@ -80,6 +80,4 @@ If link_text != "" it will be displayed as link text
 
 Used to replace given `what` Regex String
 with `for_what` String in given text,
-skipping parts of text that are in code tags,
-for this to work `in_code = find_all_in_code(text)`
 must be called first.
