@@ -1,45 +1,56 @@
-# Emoji Finder Tutorial
+# Godot Material Icons Support
 
-First add one of this nodes:
- - [EmojiIcon]
- - [EmojiButton]
+First you need to have installed and enabled Godot Material Icons addon:
 
-![emoji-nodes]
+1. Download: <https://rakugoteam.github.io/addons/material-icons>
+2. Unzip to *res:\\addons* dir
+3. Go to menu > *Project > Projects Settings > Plugins*
+4. Enable *Godot Material Icons*
 
-Open **Emoji Finder**, go to Godot's menu
-_Project (1) > Tools (2) > Emoji Finder (3)_
-So you can find the emojis easily.
+After that you can use icons in  one of this nodes:
+- [AdvancedTextLabel]
+- [AdvancedTextButton]
+- [AdvancedTextCheckButton]
 
-![EmojiFinder Menu Screen Shot][emoji-finder-menu-screenshot]
+![icon-nodes]
 
-You can search **(1)** emojis and change preview size **(2)**,
-and click on emoji you want to use.
+Open **Icon Finder**, go to Godot's menu
+_Project (1) > Tools (2) > Icon Finder (3)_
+So you can find the icons easily.
 
-![EmojiFinder Screen Shot][emoji-finder-screenshot]
+![icon-finder-menu-screenshot]
 
-When you click on emoji you want to use it alias will be copy to system clipboard.
+You can search **(1)** icons and change preview size **(2)**,
+and click on icon you want to use.
 
-![EmojiFinder Copied Emoji alias][emoji-finder-copy]
+![icon-finder-screenshot]
 
-Now select Emoji node in scene tree.
+When you click on icon you want to
+use it alias will be copy to system clipboard.
 
-![emoji-scene]
+![icon-finder-copy]
 
-Look at node **Inspector**,
-paste emoji alias using (`Ctrl + V` or *Right Mouse Button > Paste*) as **Emoji Name (1)** and set it size **(2)**.
+Now select Icon node in scene tree.
 
-![emoji-inspector]
+![icon-scene]
 
-Now emojis are in your scene:
+Look at node **Inspector**, paste icon alias using
+(`Ctrl + V` or *Right Mouse Button > Paste*)
+in to `_text`
+
+![icon-inspector]
+
+Now icons are in your scene:
 
 ![addon-in-action]
 
 [addon-in-action]:assets/addon-in-action.png
-[emoji-inspector]:assets/emoji-inspector.png
-[emoji-scene]:assets/emoji-scene.png
-[emoji-nodes]:assets/emoji-nodes.png
-[emoji-finder-copy]:assets/emoji-finder-copy.png
-[emoji-finder-menu-screenshot]:assets/emoji-finder-menu.png
-[emoji-finder-screenshot]:assets/emoji-finder.png
-[EmojiIcon]:EmojiIcon.md
-[EmojiButton]:EmojiButton.md
+[icon-inspector]:assets/icon-inspector.png
+[icon-scene]:assets/icon-scene.png
+[icon-nodes]:assets/icon-nodes.png
+[icon-finder-copy]:assets/icon-finder-copy.png
+[icon-finder-menu-screenshot]:assets/icon-finder-menu.png
+[icon-finder-screenshot]:assets/icon-finder.png
+[AdvancedTextLabel]: AdvancedTextLabel.md
+[AdvancedTextButton]: AdvancedTextButton.md
+[AdvancedTextCheckButton]: AdvancedTextCheckButton.md

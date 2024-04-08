@@ -6,12 +6,19 @@ Extends **RichTextLabel**
 ## Table of Contents
 
 - [**Vars**](#vars)
+	- [**_text**](#_text)
 	- [**raku**](#raku)
 	- [**parser**](#parser)
 - [**Signals**](#signals)
 	- [**custom_link**](#custom_link)
 
 ## Vars
+
+## _text
+
+Text to be parsed in too BBCode.
+Use it instead of `text` from RichTextLabel.
+I had to make this way as Godot doesn't allow to override `text` var behavior.
 
 ### raku
 
@@ -20,15 +27,15 @@ Used only if RDS addon is enabled
 
 ### parser
 
-Text to be parsed in too BBCode
-Use it instead of `text` from RichTextLabel
-I had to make this way as I can't override `text` var behavior
-TextParser that will be used to parse `_text`
+Text to be parsed in too BBCode.
+Use it instead of `text` from RichTextLabel.
+I had to make this way as I can't override `text` var behavior.
+TextParser that will be used to parse `_text`.
 
 ## Signals
 
 ### custom_link
  - (args)
 
-By default links (staring from `http`) will be opened in web browser
-For custom links you can connect to `custom_link` signal
+By default links (staring from `http`) will be opened in web browser.
+For custom links you can connect to `custom_link` signal.
