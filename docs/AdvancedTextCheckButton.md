@@ -1,8 +1,10 @@
 # AdvancedTextCheckButton
-This is AdvancedTextLabel that baves like toggle switch
+This is AdvancedTextLabel that behaves like toggle switch
 This node needs Godot Material Icons addon to work
 
 Extends **AdvancedTextButton**
+
+![](assets/advanced-text-check-button-inspector.png)
 
 ## Table of Contents
 
@@ -17,18 +19,18 @@ Extends **AdvancedTextButton**
 ### toggle_icon_size
 
 *default value* : `24:`
-Size of Matrial Icon that will be used as toggle icon
+Size of Material Icon that will be used as toggle icon
 
 ### toggle_on_icon
 
 *default value* : `"toggle-switch-outline":`
-Name of Matrial Icon that will be used when button is toggle on
+Name of Material Icon that will be used when button is toggle on
 This will replace `[switch]` in text
 
 ### toggle_off_icon
 
 *default value* : `"toggle-switch-off-outline":`
-Name of Matrial Icon that will be used when button is toggle off
+Name of Material Icon that will be used when button is toggle off
 This will replace `[switch]` in text
 
 ### main_text

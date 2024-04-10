@@ -3,6 +3,8 @@ This class parses given text to bbcode using given TextParser
 
 Extends **RichTextLabel**
 
+![](assets/advanced-text-label-inspector.png)
+
 ## Table of Contents
 
 - [**Vars**](#vars)
@@ -14,11 +16,16 @@ Extends **RichTextLabel**
 
 ## Vars
 
-## _text
+### _text
+
+!!! note
+
+    It will be display as `Text` in **Inspector**
 
 Text to be parsed in too BBCode.
 Use it instead of `text` from RichTextLabel.
-I had to make this way as Godot doesn't allow to override `text` var behavior.
+I had to make this way as Godot doesn't allow
+to override `text` var behavior.
 
 ### raku
 
