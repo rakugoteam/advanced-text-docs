@@ -15,17 +15,22 @@ This new version is designed in way so any one can crate its own TextParser to u
 ### Resources
 - [TextParser]
 - [ExtendedBBCodeParser]
-- [RenPyMarkup]
+- [RenPyMarkupParser]
 - [MarkdownParser]
 
 ## Plugins
+
+!!! note
+
+    Those works only in runtime and not in editor.
+
 - [Rakugo Dialogue System]
 - [Emojis For Godot]
 - [Godot Material Icons]
 
 <!-- [Markdown]: -->
 <!-- [RenPy]: -->
-<!-- [ExtendedBBCode]: -->
+[ExtendedBBCode]: ExtendedBBCode.md
 [AdvancedTextLabel]: AdvancedTextLabel.md
 [AdvancedTextButton]: AdvancedTextButton.md
 [AdvancedTextCheckButton]: AdvancedTextCheckButton.md
@@ -36,3 +41,6 @@ This new version is designed in way so any one can crate its own TextParser to u
 <!-- [Rakugo Dialogue System]:  -->
 [Emojis For Godot]: Emojis.md
 [Godot Material Icons]: Icons.md
+[ExtendedBBCodeParser]: ExtendedBBCodeParser.md
+[RenPyMarkupParser]: RenPyMarkupParser.md
+[MarkdownParser]: MarkdownParser.md

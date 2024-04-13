@@ -1,5 +1,9 @@
 # Godot Material Icons Support
 
+!!! note
+
+    Those works only in runtime and not in editor.
+
 First you need to have installed and enabled Godot Material Icons addon:
 
 1. Download: <https://rakugoteam.github.io/addons/material-icons>
@@ -12,7 +16,7 @@ After that you can use icons in  one of this nodes:
 - [AdvancedTextButton]
 - [AdvancedTextCheckButton]
 
-![icon-nodes]
+![text-nodes]
 
 Open **Icon Finder**, go to Godot's menu
 _Project (1) > Tools (2) > Icon Finder (3)_
@@ -32,22 +36,22 @@ use it alias will be copy to system clipboard.
 
 Now select Icon node in scene tree.
 
-![icon-scene]
+![text-scene]
 
 Look at node **Inspector**, paste icon alias using
 (`Ctrl + V` or *Right Mouse Button > Paste*)
-in to `_text`
+into `_text` as `[icon:icon-name, size]`.
 
-![icon-inspector]
+![text-inspector]
 
 Now icons are in your scene:
 
 ![addon-in-action]
 
-[addon-in-action]:assets/addon-in-action.png
-[icon-inspector]:assets/icon-inspector.png
-[icon-scene]:assets/icon-scene.png
-[icon-nodes]:assets/icon-nodes.png
+[addon-in-action]:assets/addon-in-action-icon.png
+[text-inspector]:assets/text-inspector-icon.png
+[text-nodes]:assets/icon-nodes.png
+[icon-scene]:assets/text-scene.png
 [icon-finder-copy]:assets/icon-finder-copy.png
 [icon-finder-menu-screenshot]:assets/icon-finder-menu.png
 [icon-finder-screenshot]:assets/icon-finder.png
