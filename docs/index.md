@@ -29,7 +29,7 @@ This new version is designed in way so any one can crate its own TextParser to u
 - [Godot Material Icons]
 
 <!-- [Markdown]: -->
-<!-- [RenPy]: -->
+[RenPy]: Renpy.md
 [ExtendedBBCode]: ExtendedBBCode.md
 [AdvancedTextLabel]: AdvancedTextLabel.md
 [AdvancedTextButton]: AdvancedTextButton.md
