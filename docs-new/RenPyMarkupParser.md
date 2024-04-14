@@ -1,22 +1,16 @@
 # RenPyMarkupParser
-
-!()[assets/ren-inspector.png]
-
 This parser is every limited as its just translates RenPy Markup to BBCode
-This parser also adds Headers `{h1}`, `:emojis:` and icons `{icon:name}` add Rakugo variables with `<var_name>`
+This parser also adds Headers {h1}, :emojis: and icons {icon:name} add Rakugo variables with <var_name>
 
 Extends **ExtendedBBCodeParser**
 
 ## Table of Contents
 
-- [**Reference**](#reference)
 - [**Funcs**](#funcs)
     - [**parse**](#parse)
     - [**parse_links**](#parse_links)
     - [**parse_imgs**](#parse_imgs)
     - [**parse_imgs_size**](#parse_imgs_size)
-
-## Reference
 
 ## Funcs
 

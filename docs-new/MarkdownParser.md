@@ -1,15 +1,11 @@
 # MarkdownParser
-
-![](assets/md-inspector.png)
-
 This parser is every limited as its just translates Markdown to BBCode
-This parser also adds `:emojis:` and icons `{icon:name}` add Rakugo variables with `<var_name>`
+This parser also adds :emojis: and icons {icon:name} add Rakugo variables with <var_name>
 
 Extends **ExtendedBBCodeParser**
 
 ## Table of Contents
 
-- [**Reference**](#reference)
 - [**Vars**](#vars)
     - [**italics**](#italics)
     - [**bold**](#bold)
@@ -35,10 +31,6 @@ Extends **ExtendedBBCodeParser**
     - [**parse_points**](#parse_points)
     - [**parse_number_points**](#parse_number_points)
     - [**parse_list**](#parse_list)
-
-## Reference
-
-
 
 ## Vars
 

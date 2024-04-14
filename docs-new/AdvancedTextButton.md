@@ -3,8 +3,6 @@ This is a AdvancedTextLabel that behaves like a button
 
 Extends **AdvancedTextLabel**
 
-![](assets/advanced-text-button-inspector.png)
-
 ## Table of Contents
 
 - [**Vars**](#vars)
