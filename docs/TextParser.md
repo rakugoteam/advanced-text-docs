@@ -4,19 +4,6 @@ Base class used by AdvancedTexts addon Parsers
 
 Extends **Resource**
 
-## Table of Contents
-
-- [**Vars**](#vars)
-  - [**re**](#re)
-  - [**result**](#result)
-  - [**replacement**](#replacement)
-- [**Funcs**](#funcs)
-  - [**parse**](#parse)
-  - [**replace_regex_match**](#replace_regex_match)
-  - [**to_bbcode_img**](#to_bbcode_img)
-  - [**to_bbcode_link**](#to_bbcode_link)
-  - [**safe_replace**](#safe_replace)
-
 ## Vars
 
 ### re

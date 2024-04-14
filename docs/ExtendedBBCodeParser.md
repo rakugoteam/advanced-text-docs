@@ -11,16 +11,6 @@ Extends **TextParser**
 
     See also (**ExtendedBBCode**)[ExtendedBBCode.md]
 
-## Table of Contents
-
-- [**Vars**](#vars)
-  - [**headers**](#headers)
-- [**Funcs**](#funcs)
-  - [**parse**](#parse)
-  - [**parse_headers**](#parse_headers)
-  - [**parse_spaces**](#parse_spaces)
-  - [**add_header**](#add_header)
-
 ## Vars
 
 ### headers

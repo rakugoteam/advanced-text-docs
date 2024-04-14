@@ -4,15 +4,8 @@ This class parses given text to bbcode using given TextParser
 
 Extends **RichTextLabel**
 
-![](assets/advanced-text-label-inspector.png)
+![img](assets/advanced-text-label-inspector.png)
 
-## Table of Contents
-
-- [**Vars**](#vars)
-  - [**_text**](#_text)
-  - [**parser**](#parser)
-- [**Signals**](#signals)
-  - [**custom_link**](#custom_link)
 
 ## Vars
 

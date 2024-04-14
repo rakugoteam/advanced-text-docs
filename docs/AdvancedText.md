@@ -6,16 +6,6 @@ Mainly used to simplify the handling of supported addons/plugins.
 
 Extends **Node**
 
-## Table of Contents
-
-- [**Vars**](#vars)
-  - [**root**](#root)
-  - [**rakugo**](#rakugo)
-  - [**emojis**](#emojis)
-  - [**icons**](#icons)
-- [**Funcs**](#funcs)
-  - [**get_singleton**](#get_singleton)
-
 ## Vars
 
 ### root

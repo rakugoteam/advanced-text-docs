@@ -1,32 +1,27 @@
 # RenPyMarkupParser
 
-!()[assets/ren-inspector.png]
+![img](assets/ren-inspector.png)
 
 This parser is every limited as its just translates RenPy Markup to BBCode
 This parser also adds Headers `{h1}`, `:emojis:` and icons `{icon:name}` add Rakugo variables with `<var_name>`
 
 Extends **ExtendedBBCodeParser**
 
-## Table of Contents
+!!! note
 
-- [**Reference**](#reference)
-- [**Funcs**](#funcs)
-    - [**parse**](#parse)
-    - [**parse_links**](#parse_links)
-    - [**parse_imgs**](#parse_imgs)
-    - [**parse_imgs_size**](#parse_imgs_size)
-
-## Reference
+    See also (**RenPyMarkup**)[RenPy.md]
 
 ## Funcs
 
 ### parse
- - text: String
+
+- text: String
 
 Returns given RenPyMarkup parsed into BBCode
 
 ### parse_links
- - text: String
+
+- text: String
 
 parse Ren'Py links into BBCode
 Ren'Py links examples:
@@ -34,14 +29,16 @@ Ren'Py links examples:
 {a}https://some_domain.com{/a}
 
 ### parse_imgs
- - text: String
+
+- text: String
 
 parse Ren'Py images with out size into BBCode
 Ren'Py images example:
-{img=<path>}
+{img=`<path>`}
 
 ### parse_imgs_size
- - text: String
+
+- text: String
 
 parse Ren'Py images with size into BBCode
 Ren'Py images with size example:
