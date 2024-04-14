@@ -19,11 +19,6 @@ This new version is designed in way so any one can crate its own TextParser to u
 - [MarkdownParser]
 
 ## Plugins
-
-!!! note
-
-    Those works only in runtime and not in editor.
-
 - [Rakugo Dialogue System]
 - [Emojis For Godot]
 - [Godot Material Icons]
