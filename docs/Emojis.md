@@ -3,7 +3,7 @@
 First you need to have installed and enabled Emojis for Godot addon:
 
 1. Download: [https://rakugoteam.github.io/addons/emojis-for-godot](https://rakugoteam.github.io/addons/emojis-for-godot)
-2. Unzip to *res:\\addons* dir
+2. Unzip to *res://addons* dir
 3. Go to menu > *Project > Projects Settings > Plugins*
 4. Enable *Godot Material Icons*
 
@@ -32,7 +32,7 @@ When you click on emoji you want to use it alias will be copy to system clipboar
 
 Now select Emoji node in scene tree.
 
-![text-scene]
+![text-scene][text-scene]
 
 Look at node **Inspector**, paste emoji alias using
 (`Ctrl + V` or *Right Mouse Button > Paste*)
@@ -44,10 +44,10 @@ Now emojis are in your scene:
 
 ![addon-in-action][addon-in-action]
 
+[text-scene]: assets/text-scene.png
 [addon-in-action]: assets/addon-in-action-emoji.png
 [text-inspector]: assets/text-inspector-emoji.png
-[text-nodes]: assets/icon-nodes.png
-[emoji-scene]: assets/emoji-scene.png
+[text-nodes]: assets/text-nodes.png
 [emoji-finder-copy]: assets/emoji-finder-copy.png
 [emoji-finder-menu-screenshot]: assets/emoji-finder-menu.png
 [emoji-finder-screenshot]: assets/emoji-finder.png

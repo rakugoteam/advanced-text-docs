@@ -45,6 +45,7 @@ Now icons are in your scene:
 
 ![addon-in-action][addon-in-action]
 
+[text-scene]: assets/text-scene.png
 [addon-in-action]: assets/addon-in-action-icon.png
 [text-inspector]: assets/text-inspector-icon.png
 [text-nodes]: assets/text-nodes.png
