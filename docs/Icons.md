@@ -1,13 +1,10 @@
 # Godot Material Icons Support
 
-First you need to have installed and enabled Godot Material Icons addon:
+!!! note
 
-1. Download: [https://rakugoteam.github.io/addons/material-icons](https://rakugoteam.github.io/addons/material-icons)
-2. Unzip to *res:\\addons* dir
-3. Go to menu > *Project > Projects Settings > Plugins*
-4. Enable *Godot Material Icons*
+    First you need to have installed and enabled[Godot Material Icons addon](https://rakugoteam.github.io/addons/material-icons).
 
-After that you can use icons in  one of this nodes:
+Icons can be used with one of this nodes:
 
 - [AdvancedTextLabel][AdvancedTextLabel]
 - [AdvancedTextButton][AdvancedTextButton]
@@ -33,7 +30,7 @@ use it alias will be copy to system clipboard.
 
 Now select Icon node in scene tree.
 
-![text-scene]
+![text-scene][text-scene]
 
 Look at node **Inspector**, paste icon alias using
 (`Ctrl + V` or *Right Mouse Button > Paste*)

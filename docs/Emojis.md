@@ -1,13 +1,10 @@
 # Emojis for Godot Support
 
-First you need to have installed and enabled Emojis for Godot addon:
+!!! note
 
-1. Download: [https://rakugoteam.github.io/addons/emojis-for-godot](https://rakugoteam.github.io/addons/emojis-for-godot)
-2. Unzip to *res://addons* dir
-3. Go to menu > *Project > Projects Settings > Plugins*
-4. Enable *Godot Material Icons*
+    First you need to have installed and enabled[Emojis for Godot addon](https://rakugoteam.github.io/addons/emojis-for-godot).
 
-After that you can use icons in  one of this nodes:
+Emojs can be used with one of this nodes:
 
 - [AdvancedTextLabel][AdvancedTextLabel]
 - [AdvancedTextButton][AdvancedTextButton]
