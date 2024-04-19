@@ -44,7 +44,7 @@ This new version is designed in way so any one can crate its own TextParser to u
 [AdvancedTextCheckButton]: AdvancedTextCheckButton.md
 [TextParser]: TextParser.md
 [ExtendedBBCodeParser]: ExtendedBBCodeParser.md
-[RenPyMarkup]: RenPyMarkupParser.md
+[RenPyMarkupParser]: RenPyMarkupParser.md
 [MarkdownParser]: MarkdownParser.md
 [Emojis For Godot]: Emojis.md
 [Godot Material Icons]: Icons.md

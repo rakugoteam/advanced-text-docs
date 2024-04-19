@@ -10,6 +10,10 @@ Icons can be used with one of this nodes:
 - [AdvancedTextButton][AdvancedTextButton]
 - [AdvancedTextCheckButton][AdvancedTextCheckButton]
 
+!!! note
+
+    See how to configure [AdvancedText Nodes].
+
 ![text-nodes][text-nodes]
 
 Open **Icon Finder**, go to Godot's menu
