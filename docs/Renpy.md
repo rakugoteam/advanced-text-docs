@@ -3,7 +3,6 @@
 !!! note
 
     It is just ExtendedBBCode in with`[]` replaced with `{}` in most cases.
-    If you need you can mix and match Makrdown with ExtendedBBCode.
     See also:
     - [RenPyMarkupParser]
     - [Rakugo Dialogue System]
