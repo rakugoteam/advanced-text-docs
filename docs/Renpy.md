@@ -61,7 +61,7 @@
 [Named colors]: https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-named-colors
 [Font options]: https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-font-options
 [Texture2D]: https://docs.godotengine.org/en/4.2/classes/class_texture2d.html#class-texture2d
-[custom_link]: AdvancedTextLabel#custom_link
+[custom_link]: AdvancedTextLabel.md#custom_link
 [Paragraph options]: https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-paragraph-options
 [RichTextLabel]: https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html
 [Emojis For Godot]: Emojis.md
@@ -69,4 +69,4 @@
 [BBCode in RichTextLabel]: https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html
 [Ordered list types]: https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-list-types
 [RenPyMarkup]: RenPyMarkupParser.md
-[headers]: ExtendedBBCodeParser#headers
+[headers]: ExtendedBBCodeParser.md#headers

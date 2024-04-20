@@ -15,18 +15,21 @@ Extends **ExtendedBBCodeParser**
 
 ### italics
 
-*default value* : `"*"`
-choose to use * or _ to open/close italics tag
+_default value_ : `"*"`
+
+choose to use \* or \_ to open/close italics tag
 
 ### bold
 
-*default value* : `"**"`
-choose to use * or _ to open/close bold tag
+_default value_ : `"**"`
+
+choose to use \* or \_ to open/close bold tag
 
 ### points
 
-*default value* : `"-"`
-choose to use - or * to make points in bulleted list
+_default value_ : `"-"`
+
+choose to use - or \* to make points in bulleted list
 
 ## Funcs
 
@@ -53,14 +56,14 @@ Parse md # Headers in given text into BBCode
 - text: String
 
 Parse md images to in given text to BBCode
-Example of md image: ![](path/to/img)
+Example of md image: `![](path/to/img)`
 
 ### parse_imgs_size
 
 - text: String
 
 Parse md images with size to in given text to BBCode
-Example of md image with size: ![height x width](path/to/img)
+Example of md image with size: `![height x width](path/to/img)`
 
 ### parse_links
 
@@ -68,17 +71,15 @@ Example of md image with size: ![height x width](path/to/img)
 
 Parse md links to in given text to BBCode
 Examples of md link:
-[link](path/to/file.md)
-[https://www.example.com](https://www.example.com)
+`[link](path/to/file.md)`
+`[https://www.example.com](https://www.example.com)`
 
 ### parse_hints
 
 - text: String
 
 Parse md hint to in given text to BBCode
-@[text](hint)
-
-### parse_sing
+`@[text](hint)`
 
 ### parse_italics
 
@@ -86,8 +87,9 @@ Parse md hint to in given text to BBCode
 
 Parse md italics to in given text to BBCode
 Example of md italics:
-If italics = "*" : *italics*
-If italics = "_" : _italics_
+
+- If `italics` is `*` then `*italics*`
+- If `italics` is `_` then `_italics_`
 
 ### parse_bold
 
@@ -95,15 +97,16 @@ If italics = "_" : _italics_
 
 Parse md bold to in given text to BBCode
 Example of md bold:
-If bold = "**" : **bold**
-If bold = "__" : __bold__
+
+- If `bold` is `**` then `**bold**`
+- If `bold` is `**` then `__bold__`
 
 ### parse_strike_through
 
 - text: String
 
 Parse md strike through to in given text to BBCode
-Example of md strike through: ~~strike through~~
+Example of md strike through: `~~strike through~~`
 
 ### parse_code
 
@@ -111,8 +114,9 @@ Example of md strike through: ~~strike through~~
 
 Parse md code to in given text to BBCode
 Example of md code:
-one line code: `code`
-multiline code: ``code``
+
+- one line code: `` `code` ``
+- multiline code: ` ```code``` `
 
 ### parse_table
 
@@ -120,9 +124,12 @@ multiline code: ``code``
 
 Parse md table to in given text to BBCode
 Example of md table:
+
+```
 @tabel=2 {
 | cell1 | cell2 |
 }
+```
 
 ### parse_color_key
 
