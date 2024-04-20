@@ -1,5 +1,5 @@
 site_name: AdvancedText
-repo_url: https://github.com/rakugoteam/repo-name
+repo_url: https://rakugoteam.github.io/advanced-text-docs/
 
 extra:
   homepage: https://rakugoteam.github.io
@@ -12,7 +12,7 @@ extra:
 
 theme:
   name: material
-  logo: logo.svg
+  logo: logo.png
   palette:
     scheme: slate
     primary: deep purple
