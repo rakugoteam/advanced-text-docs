@@ -1,0 +1,823 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Emojis/">
+      
+      
+        <link rel="next" href="../ExtendedBBCodeParser/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>ExtendedBBCode - AdvancedText</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#extendedbbcode" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://rakugoteam.github.io" title="AdvancedText" class="md-header__button md-logo" aria-label="AdvancedText" data-md-component="logo">
+      
+  <img src="../logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AdvancedText
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ExtendedBBCode
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rakugoteam/repo-name" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://rakugoteam.github.io" title="AdvancedText" class="md-nav__button md-logo" aria-label="AdvancedText" data-md-component="logo">
+      
+  <img src="../logo.svg" alt="logo">
+
+    </a>
+    AdvancedText
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rakugoteam/repo-name" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AdvancedText
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AdvancedText/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AdvancedText Singleton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AdvancedTextButton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AdvancedTextButton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AdvancedTextCheckButton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AdvancedTextCheckButton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AdvancedTextLabel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AdvancedTextLabel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Emojis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emojis for Godot Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    ExtendedBBCode
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ExtendedBBCodeParser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ExtendedBBCodeParser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HowToUse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How To use
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Icons/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Godot Material Icons Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Markdown/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MarkdownParser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MarkdownParser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Rakugo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rakugo Dialogue System Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RenPyMarkupParser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RenPyMarkupParser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Renpy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RenPy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TextParser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TextParser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="extendedbbcode">ExtendedBBCode</h1>
+<div class="admonition see also">
+<p class="admonition-title">See</p>
+<ul>
+<li><a href="./">ExtendedBBCodeParser</a></li>
+<li><a href="../Rakugo/">Rakugo Dialogue System</a></li>
+<li><a href="../Emojis/">Emojis For Godot</a></li>
+<li><a href="../Icons/">Godot Material Icons</a></li>
+<li><a href="https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html">BBCode in RichTextLabel</a></li>
+</ul>
+</div>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>h1</strong>-<strong>h4</strong><br />Will display <code>{text}</code> using <code>Label Settings</code> from <a href="../ExtendedBBCodeParser/#headers">headers</a></td>
+<td><code>[h1]{text}[\h1]</code><br /><code>[h2]{text}[\h2]</code><br /><code>[h3]{text}[\h3]</code><br /><code>[h4]{text}[\h4]</code></td>
+</tr>
+<tr>
+<td><strong>space</strong><br />Will add vertical space bettween lines of given <code>{size}</code></td>
+<td><code>{text}</code><br /><code>[space={size}]</code><br /><code>{text}</code></td>
+</tr>
+<tr>
+<td><strong>b</strong><br />Makes <code>{text}</code> use the bold (or bold italics) font <a href="https://docs.godotengine.org/en/4.2/classes/class_richtextlabel.html">RichTextLabel</a></td>
+<td><code>[b]{text}[/b]</code></td>
+</tr>
+<tr>
+<td><strong>i</strong><br />Makes <code>{text}</code> use the italics (or bold italics) font of <a href="https://docs.godotengine.org/en/4.2/classes/class_richtextlabel.html">RichTextLabel</a></td>
+<td><code>[i]{text}[/i]</code></td>
+</tr>
+<tr>
+<td><strong>u</strong><br />Makes <code>{text}</code> underlined.</td>
+<td><code>[u]{text}[/u]</code></td>
+</tr>
+<tr>
+<td><strong>s</strong> <br />Makes <code>{text}</code> strikethrough.</td>
+<td><code>[s]{text}[/s]</code></td>
+</tr>
+<tr>
+<td><strong>code</strong><br />Makes <code>{text}</code> use the mono font of <a href="https://docs.godotengine.org/en/4.2/classes/class_richtextlabel.html">RichTextLabel</a>.</td>
+<td><code>[code]{text}[/code]</code></td>
+</tr>
+<tr>
+<td><strong>p</strong><br />Adds new paragraph with <code>{text}</code> . Supports configuration options, see <a href="https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-paragraph-options">Paragraph options</a>.</td>
+<td><code>[p]{text}[/p]</code><br /><code>[p {options}]{text}[/p]</code></td>
+</tr>
+<tr>
+<td><strong>center</strong> Makes <code>{text}</code> horizontally centered.<br />Same as <code>[p align=center].</code></td>
+<td><code>[center]{text}[/center]</code></td>
+</tr>
+<tr>
+<td><strong>left</strong> <br />Makes <code>{text}</code> horizontally left-aligned.<br />Same as <code>[p align=left]</code>.</td>
+<td><code>[left]{text}[/left]</code></td>
+</tr>
+<tr>
+<td><strong>right</strong> <br />Makes <code>{text}</code> horizontally right-aligned.<br />Same as <code>[p align=right]</code>.</td>
+<td><code>[right]{text}[/right]</code></td>
+</tr>
+<tr>
+<td><strong>fill</strong><br />Makes <code>{text}</code> fill the full width of <a href="https://docs.godotengine.org/en/4.2/classes/class_richtextlabel.html">RichTextLabel</a>.<br />Same as <code>[p align=fill]</code>.</td>
+<td><code>[fill]{text}[/fill]</code></td>
+</tr>
+<tr>
+<td><strong>indent</strong><br />Indents <code>{text}</code> once. The indentation width is the<br /> same as with <code>[ul]</code> or <code>[ol]</code>, but without a bullet point.</td>
+<td><code>[indent]{text}[/indent]</code></td>
+</tr>
+<tr>
+<td><strong>url</strong> <br />Creates a hyperlink (underlined and clickable text).<br />Can contain optional <code>{text}</code> or display <code>{link}</code> as is.<br />If link starts with <code>http</code>it will be open in system web browser,<br /> else it will be handle by <a href="../AdvancedTextLabel/#custom_link">custom_link</a> signal.</td>
+<td><code>[url]{link}[/url]</code><br /><code>[url={link}]{text}[/url]</code></td>
+</tr>
+<tr>
+<td><strong>hint</strong><br />Creates a tooltip hint that is displayed when hovering the text with the mouse.<br />Tooltip text should not be quoted (quotes will appear as-is in the tooltip otherwise).</td>
+<td><code>[hint={tooltip text displayed on hover}]{text}[/hint]</code></td>
+</tr>
+<tr>
+<td><strong>img</strong> <br />Inserts an image from the <code>{path}</code> (can be any valid <a href="https://docs.godotengine.org/en/4.2/classes/class_texture2d.html#class-texture2d">Texture2D</a> resource).<br />If <code>{width}</code> is provided, the image will try to fit that width maintaining the aspect ratio.<br />If both <code>{width}</code> and <code>{height}</code> are provided, the image will be scaled to that size.<br />If <code>{valign}</code> configuration is provided, the image will try to align to the surrounding text,<br /> see <a href="https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-image-alignment">Image vertical alignment</a>. Supports configuration options, see <a href="https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-image-options">Image options</a>.</td>
+<td><br /><code>[img]{path}[/img]</code><br /><code>[img={width}]{path}[/img]</code><br /><code>[img={width}x{height}]{path}[/img]</code><br /><code>[img={valign}]{path}[/img]</code><br /><code>[img {options}]{path}[/img]</code></td>
+</tr>
+<tr>
+<td><strong>font</strong> <br />Makes <code>{text}</code> use a font resource from the <code>{path}</code>.<br />Supports configuration options, see <a href="https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-font-options">Font options</a>.</td>
+<td><code>[font={path}]{text}[/font]</code><br /><code>[font {options}]{text}[/font]</code></td>
+</tr>
+<tr>
+<td><strong>font_size</strong> <br />Use custom font size for <code>{text}</code>.</td>
+<td><code>[font_size={size}]{text}[/font_size]</code></td>
+</tr>
+<tr>
+<td><strong>dropcap</strong> <br />Use a different font size and color for <code>{text}</code>, <br />while making the tag's contents span multiple lines if it's large enough.<br />A [drop cap] is typically one uppercase character, <br />but <code>[dropcap]</code> supports containing multiple characters.<br />Margins values are comma-separated and can be positive, zero or negative.<br />Negative top and bottom margins are particularly useful<br />to allow the rest of the paragraph to display below the dropcap.</td>
+<td><code>[dropcap font_size={size} color={color} margins={left},{top},{right},{bottom}]{text}[/dropcap]</code></td>
+</tr>
+<tr>
+<td><strong>opentype_features</strong> <br />Enables custom OpenType font features for <code>{text}</code>. <br />Features must be provided as a comma-separated <code>{list}</code>.</td>
+<td><code>[opentype_features={list}]{text}[/opentype_features]</code></td>
+</tr>
+<tr>
+<td><strong>lang</strong><br />Overrides the language for <code>{text}</code> that is set by the <em>BiDi &gt; Language</em> property in <a href="https://docs.godotengine.org/en/4.2/classes/class_richtextlabel.html">RichTextLabel</a>.<br /><code>{code}</code> must be an ISO <a href="https://docs.godotengine.org/en/4.2/tutorials/i18n/locales.html#doc-locales">language code</a>.<br />This can be used to enforce the use of a specific script for a language without starting a new paragraph.<br /> Some font files may contain script-specific substitutes, in which case they will be used.</td>
+<td><code>[lang={code}]{text}[/lang]</code></td>
+</tr>
+<tr>
+<td><strong>color</strong> <br />Changes the color of <code>{text}</code>. <br />Color must be provided by a common name (see <a href="https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-named-colors">Named colors</a>)<br />or using the HEX format (e.g. <code>#ff00ff</code>, see <a href="https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-hex-colors">Hexadecimal color codes</a>).</td>
+<td><code>[color={code/name}]{text}[/color]</code></td>
+</tr>
+<tr>
+<td><strong>bgcolor</strong> <br />Draws the color behind <code>{text}</code>. <br />This can be used to highlight text.<br />Accepts same values as the color tag.</td>
+<td><code>[bgcolor={code/name}]{text}[/bgcolor]</code></td>
+</tr>
+<tr>
+<td><strong>fgcolor</strong> <br />Draws the color in front of <code>{text}</code>. <br />This can be used to "redact" text by using an opaque foreground color. <br />Accepts same values as the color tag.</td>
+<td><code>[fgcolor={code/name}]{text}[/fgcolor]</code></td>
+</tr>
+<tr>
+<td><strong>outline_size</strong> <br />Use custom font outline size for <code>{text}</code>.</td>
+<td><code>[outline_size={size}]&lt;br /&gt;{text}&lt;br /&gt;[/outline_size]</code></td>
+</tr>
+<tr>
+<td><strong>outline_color</strong> <br />Use custom outline color for <code>{text}</code>.<br />Accepts same values as the color tag.</td>
+<td><code>[outline_color={code/name}]&lt;br /&gt;{text}&lt;br /&gt;[/outline_color]</code></td>
+</tr>
+<tr>
+<td><strong>table</strong> <br />Creates a table with the <code>{number}</code> of columns.<br />Use the cell tag to define table cells.</td>
+<td><code>[table={number}]{cells}[/table]</code></td>
+</tr>
+<tr>
+<td><strong>cell</strong> <br />Adds a cell with <code>{text}</code> to the table.<br />If <code>{ratio}</code> is provided, the cell will try to expand to <br />that value proportionally to other cells and their ratio values.<br />Supports configuration options, see <a href="https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-cell-options">Cell options</a>.</td>
+<td><code>[cell]{text}[/cell]</code><br /><code>[cell={ratio}]{text}[/cell]</code><br /><code>[cell {options}]{text}[/cell]</code></td>
+</tr>
+<tr>
+<td><strong>ul</strong> <br />Adds an unordered list.<br />List <code>{items}</code> must be provided by putting one item per line of text.<br />The bullet point can be customized using the <code>{bullet}</code> parameter, see [Unordered list bullet].</td>
+<td><code>[ul]{items}[/ul]</code><br /><code>[ul bullet={bullet}]{items}[/ul]</code></td>
+</tr>
+<tr>
+<td><strong>ol</strong> <br />Adds an ordered (numbered) list of the given <code>{type}</code> (see <a href="https://docs.godotengine.org/en/4.2/tutorials/ui/bbcode_in_richtextlabel.html#doc-bbcode-in-richtextlabel-list-types">Ordered list types</a>).<br />List <code>{items}</code> must be provided by putting one item per line of text.</td>
+<td><code>[ol type={type}]{items}[/ol]</code></td>
+</tr>
+<tr>
+<td><strong>@wave</strong><br /><img alt="wave-fx" src="../assets/wave.gif" /></td>
+<td><code>[wave amp=50 freq=2]{text}[/wave]</code></td>
+</tr>
+<tr>
+<td><strong>tornado</strong><br /><img alt="tornado-fx" src="../assets/tornado.gif" /></td>
+<td><code>[tornado radius=5 freq=2]{text}[/tornado]</code></td>
+</tr>
+<tr>
+<td><strong>shake</strong><br /><img alt="shake-fx" src="../assets/shake.gif" /></td>
+<td><code>[shake rate=5 level=10]{text}[/shake]</code></td>
+</tr>
+<tr>
+<td><strong>rainbow</strong><br /><img alt="rainbow-fx" src="../assets/rainbow.gif" /></td>
+<td><code>[rainbow freq=0.2 sat=10 val=20]{text}[/rainbow]</code></td>
+</tr>
+<tr>
+<td>Several Unicode control characters can be added using their own self-closing tags.<br />This can result in easier maintenance compared to pasting those<br />control characters directly in the text.</td>
+<td><code>[lrm]</code> (left-to-right mark), <br /><code>[rlm]</code> (right-to-left mark),<br /><code>[lre]</code> (left-to-right embedding),<br /><code>[rle]</code> (right-to-left embedding),<br /><code>[lro]</code> (left-to-right override),<br /><code>[rlo]</code> (right-to-left override),<br /><code>[pdf]</code> (pop directional formatting),<br /><code>[alm]</code>(Arabic letter mark),<br /><code>[lri]</code> (left-to-right isolate),<br /><code>[rli]</code>(right-to-left isolate),<br /><code>[fsi]</code> (first strong isolate),<br /><code>[pdi]</code> (pop directional isolate),<br /><code>[zwj]</code> (zero-width joiner),<br /><code>[zwnj]</code> (zero-width non-joiner),<br /><code>[wj]</code> (word joiner),<br /><code>[shy]</code> (soft hyphen)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+    
+  </body>
+</html>
