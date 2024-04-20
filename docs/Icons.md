@@ -2,7 +2,7 @@
 
 !!! note
 
-    First you need to have installed and enabled[Godot Material Icons addon](https://rakugoteam.github.io/addons/material-icons).
+    First you need to have installed and enabled [Godot Material Icons addon](https://rakugoteam.github.io/addons/material-icons).
 
 Icons can be used with one of this nodes:
 
@@ -37,7 +37,7 @@ Now select Icon node in scene tree.
 ![text-scene][text-scene]
 
 Look at node **Inspector**, paste icon alias using
-(`Ctrl + V` or *Right Mouse Button > Paste*)
+(`Ctrl + V` or _Right Mouse Button > Paste_)
 into `_text` as `[icon:icon-name, size]`.
 
 ![text-inspector][text-inspector]
@@ -46,6 +46,7 @@ Now icons are in your scene:
 
 ![addon-in-action][addon-in-action]
 
+[AdvancedText Nodes]: HowToUse.md
 [text-scene]: assets/text-scene.png
 [addon-in-action]: assets/addon-in-action-icon.png
 [text-inspector]: assets/text-inspector-icon.png

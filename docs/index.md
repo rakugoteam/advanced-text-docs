@@ -30,14 +30,12 @@ This new version is designed in way so any one can crate its own TextParser to u
 
 ## Plugins
 
-- [Rakugo Dialogue System]
+- [Rakugo Dialogue System][Rakugo Dialogue System]
 - [Emojis For Godot][Emojis For Godot]
 - [Godot Material Icons][Godot Material Icons]
 
 [How To Use]: HowToUse.md
-
-<!-- [Rakugo Dialogue System]:  -->
-
+[Rakugo Dialogue System]: Rakugo.md
 [Markdown]: Markdown.md
 [AdvancedText]: AdvancedText.md
 [RenPy]: Renpy.md

@@ -2,7 +2,7 @@
 
 !!! note
 
-    First you need to have installed and enabled[Emojis for Godot addon](https://rakugoteam.github.io/addons/emojis-for-godot).
+    First you need to have installed and enabled [Emojis for Godot addon](https://rakugoteam.github.io/addons/emojis-for-godot).
 
 Emojs can be used with one of this nodes:
 
@@ -36,7 +36,7 @@ Now select Emoji node in scene tree.
 ![text-scene][text-scene]
 
 Look at node **Inspector**, paste emoji alias using
-(`Ctrl + V` or *Right Mouse Button > Paste*)
+(`Ctrl + V` or _Right Mouse Button > Paste_)
 into `_text` as :emoji-name, size:
 
 ![text-inspector][text-inspector]
@@ -45,6 +45,7 @@ Now emojis are in your scene:
 
 ![addon-in-action][addon-in-action]
 
+[AdvancedText Nodes]: HowToUse.md
 [text-scene]: assets/text-scene.png
 [addon-in-action]: assets/addon-in-action-emoji.png
 [text-inspector]: assets/text-inspector-emoji.png
