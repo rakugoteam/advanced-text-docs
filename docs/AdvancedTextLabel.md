@@ -2,14 +2,13 @@
 
 This class parses given text to bbcode using given TextParser
 
-Extends **RichTextLabel**
+Extends **[RichTextLabel](https://docs.godotengine.org/en/4.2/classes/class_richtextlabel.html)**
 
 ![img](assets/advanced-text-label-inspector.png)
 
-
 ## Vars
 
-### _text
+### \_text
 
 !!! note
 

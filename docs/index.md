@@ -3,36 +3,36 @@
 This Addon is sets of Nodes that extends RichTextLabel and adds support for Markdown and RenPy.
 This new version is designed in way so any one can crate its own TextParser to use with AdvancedText nodes.
 
-- [How To Use][How To Use]
+- [How To Use]
 
 ## Markups
 
-- [Markdown][Markdown]
-- [RenPy][RenPy]
-- [ExtendedBBCode][ExtendedBBCode]
+- [Markdown]
+- [RenPy]
+- [ExtendedBBCode]
 
 ## Singletons
 
-- [AdvancedText][AdvancedText]
+- [AdvancedText]
 
 ## Nodes
 
-- [AdvancedTextLabel][AdvancedTextLabel]
-- [AdvancedTextButton][AdvancedTextButton]
-- [AdvancedTextCheckButton][AdvancedTextCheckButton]
+- [AdvancedTextLabel]
+- [AdvancedTextButton]
+- [AdvancedTextCheckButton]
 
 ## Resources
 
-- [TextParser][TextParser]
-- [ExtendedBBCodeParser][ExtendedBBCodeParser]
-- [RenPyMarkupParser][RenPyMarkupParser]
-- [MarkdownParser][MarkdownParser]
+- [TextParser]
+- [ExtendedBBCodeParser]
+- [RenPyMarkupParser]
+- [MarkdownParser]
 
 ## Plugins
 
-- [Rakugo Dialogue System][Rakugo Dialogue System]
-- [Emojis For Godot][Emojis For Godot]
-- [Godot Material Icons][Godot Material Icons]
+- [Rakugo Dialogue System]
+- [Emojis For Godot]
+- [Godot Material Icons]
 
 [How To Use]: HowToUse.md
 [Rakugo Dialogue System]: Rakugo.md

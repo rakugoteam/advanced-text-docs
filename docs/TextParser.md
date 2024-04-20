@@ -2,13 +2,14 @@
 
 Base class used by AdvancedTexts addon Parsers
 
-Extends **Resource**
+Extends **[Resource](https://docs.godotengine.org/en/4.2/classes/class_resource.html)**
 
 ## Vars
 
 ### re
 
-*default value* : `RegEx.new()`
+_default value_ : `RegEx.new()`
+
 RegEx used by this class
 
 ### result
@@ -17,7 +18,8 @@ Used to store result of last RegEx search
 
 ### replacement
 
-*default value* : `""`
+_default value_ : `""`
+
 Used to store replacement for RegEx search
 
 ## Funcs
@@ -46,7 +48,7 @@ Func that my parsers uses to replace result in given text with replacement.
 ### to_bbcode_img
 
 - path: String
-- size:=""
+- size: String
 
 Returns given path to image as BBCode img
 Size must be given as "`<height>`x `<width>`" without "< >"
@@ -55,10 +57,10 @@ Size is this way to be easy to use by Parsers
 ### to_bbcode_link
 
 - path: String
-- link_text:=""
+- link_text: String
 
 Returns given path/url to image as BBCode link
-If link_text != "" it will be displayed as link text
+If `link_text != ""` it will be displayed as link text
 
 ### safe_replace
 

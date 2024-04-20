@@ -6,9 +6,9 @@
 
 Emojs can be used with one of this nodes:
 
-- [AdvancedTextLabel][AdvancedTextLabel]
-- [AdvancedTextButton][AdvancedTextButton]
-- [AdvancedTextCheckButton][AdvancedTextCheckButton]
+- [AdvancedTextLabel]
+- [AdvancedTextButton]
+- [AdvancedTextCheckButton]
 
 !!! note
 

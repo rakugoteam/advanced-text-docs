@@ -5,11 +5,11 @@
 This parser is every limited as its just translates RenPy Markup to BBCode
 This parser also adds Headers `{h1}`, `:emojis:` and icons `{icon:name}` add Rakugo variables with `<var_name>`
 
-Extends **ExtendedBBCodeParser**
+Extends **[ExtendedBBCodeParser]**
 
-!!! note
+!!! See also
 
-    See also (**RenPyMarkup**)[RenPy.md]
+    [**RenPyMarkup**](Renpy.md)
 
 ## Funcs
 
@@ -25,8 +25,11 @@ Returns given RenPyMarkup parsed into BBCode
 
 parse Ren'Py links into BBCode
 Ren'Py links examples:
+
+```
 {a=https://some_domain.com}link{/a}
 {a}https://some_domain.com{/a}
+```
 
 ### parse_imgs
 
@@ -34,7 +37,7 @@ Ren'Py links examples:
 
 parse Ren'Py images with out size into BBCode
 Ren'Py images example:
-{img=`<path>`}
+`{img=<path>}`
 
 ### parse_imgs_size
 
@@ -42,3 +45,6 @@ Ren'Py images example:
 
 parse Ren'Py images with size into BBCode
 Ren'Py images with size example:
+`{img=<path> size=<height>x<width>}`
+
+[ExtendedBBCodeParser]: ExtendedBBCodeParser.md

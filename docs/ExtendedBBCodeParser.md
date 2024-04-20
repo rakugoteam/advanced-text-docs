@@ -5,19 +5,19 @@
 This parser adds Headers `{h1}`, `:emojis:` and icons `[icon:name]`
 add Rakugo variables with `<var_name>` to BBCode
 
-Extends **TextParser**
+Extends **[TextParser](TextParser.md)**
 
-!!! note
+!!! See also
 
-    See also (**ExtendedBBCode**)[ExtendedBBCode.md]
+    [**ExtendedBBCode**](ExtendedBBCode.md)
 
 ## Vars
 
 ### headers
 
-*default value* : `_gen_headers([22, 20, 18, 16])`
+_default value_ : `_gen_headers([22, 20, 18, 16])`
 
-*Setting for headers*
+_Setting for headers_
 
 By default those settings are just sizes: `22`, `20`, `18` and `16`.
 Due to BBCode limitations `shadow_color` is used as background color.
@@ -51,6 +51,6 @@ Parse `[space=x]`, that it add space in text in size of x
 
 - header_size: int
 - text: String
-- add_new_line:=false
+- add_new_line := false
 
 Returns given text with added BBCode for header with given size (1-4) to it.

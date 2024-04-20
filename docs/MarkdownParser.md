@@ -5,11 +5,11 @@
 This parser is every limited as its just translates Markdown to BBCode
 This parser also adds `:emojis:` and icons `{icon:name}` add Rakugo variables with `<var_name>`
 
-Extends **ExtendedBBCodeParser**
+Extends **[ExtendedBBCodeParser]**
 
-!!! note
+!!! See also
 
-    See also (**MarkdownParser**)[Markdown.md]
+    [**Markdown**](Markdown.md)
 
 ## Vars
 
@@ -179,3 +179,5 @@ Parse md number points list to in given text to BBCode
 - regex: String
 
 Parse md list to in given text to BBCode
+
+[ExtendedBBCodeParser]: ExtendedBBCodeParser.md

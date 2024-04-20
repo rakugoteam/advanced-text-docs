@@ -4,7 +4,7 @@ This is singleton is used to keep references and common variables
 for AdvancedText in one place and not duplicate them.
 Mainly used to simplify the handling of supported addons/plugins.
 
-Extends **Node**
+Extends **[Node](https://docs.godotengine.org/en/4.2/classes/class_node.html)**
 
 ## Vars
 
